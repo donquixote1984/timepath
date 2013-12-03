@@ -1,0 +1,53 @@
+.register-board {
+    vertical-align:middle;
+    
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(240,240,240,0.5),rgba(200,200,200,0));
+    border-radius:5px;
+    box-shadow:0 0 20px #fff inset;
+    margin-top:50px;
+}
+.register-board-shadow {
+   width:400px;
+   height:300px;
+   box-shadow: 0 0 7px #aaa; 
+   border-radius: 5px;
+   margin:0 auto;
+}
+.register-board-form {
+    width:100%;
+    height:100%;
+}
+.new_user {
+    width:100%;
+    height:100%;
+    padding:10px;
+}
+.form-field {
+    margin-top:10px;
+}
+.form-field input {
+    margin:0 auto;
+    display:block;
+    width:280px;
+    height:40px;
+    margin-top:15px;
+    font-size:1.2em;
+}
+
+.form-message{
+    height:30px;
+    display:none;
+}
+.form-field input[type='submit'] {
+    cursor:pointer;
+    background:linear-gradient(#4196E0, #3A73BA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius:5px;
+    border:#369;
+    color:#fff;
+}
+.form-field input[type='submit']:hover {
+    background:linear-gradient(#4AABFF, #3A73BA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border:1px solid #4AABFF;
+}
