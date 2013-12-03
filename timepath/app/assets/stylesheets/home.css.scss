@@ -19,6 +19,27 @@ input:focus {
     box-shadow:0 0 7px #fff;
     border:1px solid #ccc;
 }
+
+::-webkit-input-placeholder {
+   color: #aaa;
+   font-size:0.9em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #aaa;  
+   font-size:0.9em;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #aaa;  
+   font-size:0.9em;
+}
+
+:-ms-input-placeholder {  
+   color: #aaa;  
+   font-size:0.9em;
+}
+
 .header {
     height:120px;
     width:100%;
