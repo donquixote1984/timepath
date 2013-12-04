@@ -6,7 +6,6 @@
     background: linear-gradient(rgba(240,240,240,0.5),rgba(200,200,200,0));
     border-radius:5px;
     box-shadow:0 0 20px #fff inset;
-    margin-top:50px;
 }
 .register-board-shadow, .login-board-shadow {
    width:100%;
@@ -14,7 +13,21 @@
    box-shadow: 0 0 7px #aaa; 
    border-radius: 5px;
    margin:0 auto;
+   position:absolute;
+   left:0;
+   top:50px;
+   backface-visibility: hidden;
 
+}
+
+.turnover {
+     transform: rotateY(180deg);
+}
+.turnback {
+    transform:rotateY(0deg);
+}
+.login-board-shadow  {
+    transform:rotateY(180deg);
 }
 .register-board-form,.login-form {
     width:100%;
@@ -35,6 +48,7 @@
     height:40px;
     margin-top:15px;
     font-size:1.2em;
+    color:#555;
 }
 
 .form-message{
@@ -51,8 +65,37 @@
 
 .form-field input[type='checkbox']  {
     cursor:pointer;
+    margin:0;
+    display:inline-block;
+    margin-right:10px;
+}
+
+.form-field textarea {
+    margin-top:20px;
+    border:1px solid #bbb;
+    width:275px;
+    border-radius:3px;
+    padding:5px;
+}
+
+.form-field .inline-field {
+    width:125px;
+    display:inline;
 }
 .form-field input[type='submit']:hover {
     background:linear-gradient(#4AABFF, #3A73BA) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border:1px solid #4AABFF;
+}
+.form-field .inline-div-group {
+    display:block;
+    width:290px;
+    margin:0 auto;
+}
+.checkbox-wrapper {
+    width:290px;
+    margin:15px auto 0;
+}
+
+.checkbox-wrapper label{
+    color:#666;
 }

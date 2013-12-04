@@ -1,0 +1,67 @@
+<div class='container'>
+<div class='main-header'>
+    <div class='main-header-left'></div>
+    <div class='main-header-right'>
+        <div id="signout-header"><%= link_to "注销", destroy_user_session_path, :method => :delete %></div>
+    </div>
+</div>
+<div class="main">
+        <div class="timeline-container">
+            <div id="timeline">
+                      <div id="time-spot">
+                        <div class="cover-top"></div>
+                        <div class="content">
+                            <div class="content-container"></div>
+                        </div>
+                        <div class="cover-bottom"></div>
+                      </div>
+                    <div id="time-period">
+                        
+                       
+                        <div class="content-background">
+                        <div class="content-background-board"></div>
+                        <div class="arrow-top"></div>
+                        <div class="arrow-bottom"></div>
+                        <div class="axis"></div>
+                        <div class="shadow-seperator"></div>
+                        <div class='drag-spec'></div>
+                        </div>
+                        <div class="time-content-container">
+                             <div class="time-content">
+                                <ul>
+
+                                </ul>    
+                            </div>
+                        </div>
+ 
+                    </div>
+            </div>
+        </div>
+        
+</div>
+<div class='hover' init='false'>
+    <div class='profile-board'>
+        <div class='profile-board-control'>
+            <i class='glyphicons close'></i>
+        </div>
+       <h3>完善个人信息<a href="javascript:void()" id='ttyl'>稍后在说</a></h3> 
+       <div class='form-field'>
+            <div><input placeholder='请问尊姓大名' autofocus='autofocus'/></div>
+            <div>
+                <div class='inline-div-group'>
+                <input class='inline-field' placeholder='年龄'/>
+                <input class='inline-field' placeholder='现居地' style='margin-left:19px'/>
+                <div>
+                <div>
+                <textarea rows="6" cols="30" placeholder="来点个人介绍..." value="">
+                </textarea>
+                </div>
+                <div><button id='profile-submit'>确定</button></div>
+            </div>
+       </div>
+       
+    </div>
+</div>
+
+</div>
+<%= javascript_include_tag "main", "data-turbolinks-track" => true %>

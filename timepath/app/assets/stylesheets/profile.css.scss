@@ -1,0 +1,56 @@
+.profile-board {
+    width:500px;
+    height:400px;
+    background:#fff;
+    position:relative;
+    z-index:10;
+    margin:0 auto;
+    margin-top:200px;
+    border-radius:5px;
+    box-shadow:0 0 7px #555555;
+    background:linear-gradient(rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0.5)) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    overflow:auto;
+}
+.profile-board h3 {
+    height:30px;
+    padding:5px;
+    text-align:center;
+    color:#333;
+    margin-top:10px;
+}
+.profile-board h3 a {
+    background:linear-gradient(#8ADD6D, #60B044);
+    padding:4px 20px;
+    border:1px solid #60B044;
+    margin-left:20px;
+    border-radius:3px;
+    font-size:0.8em;
+    color:#fff;
+    text-decoration: none;
+    font-weight: normal;
+
+}
+.profile-board h3 a:hover {
+    background:linear-gradient(#79D858,#569E3D);
+}
+.profile-board-control {
+    float:right;
+    height:10px;
+    padding:5px;
+}
+#profile-submit {
+    margin:0 auto;
+    display: block;
+    background:linear-gradient(#4196E0, #3A73BA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border:medium none #bbb;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    width:120px;
+    margin-top:10px;
+    padding:5px;
+    box-shadow: 0 -2px 0 #2A6496 inset;
+}
+#profile-submit:hover {
+    background:#428BCA;
+};

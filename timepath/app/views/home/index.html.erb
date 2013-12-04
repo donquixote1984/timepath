@@ -1,6 +1,6 @@
 <div class='header'>
     <div class='header-content'>
-        Lorem ipsum dolor
+        创建您的个人时间轴
     </div>
     
 </div>
@@ -36,14 +36,13 @@
                     <div class='login-board-form'>
                        <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
                         <div class='form-field'>
-                            <div><%= f.email_field :email, :autofocus => true %></div>
-                            <div><%= f.password_field :password %></div>
-
+                            <div><%= f.email_field :email, :autofocus => true, :placeholder=>'电子邮件' %></div>
+                            <div ><%= f.password_field :password, :placeholder=>'密码'%></div>
                             <% if devise_mapping.rememberable? -%>
-                              <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+                              <div class='checkbox-wrapper'><%= f.check_box :remember_me %> <%= f.label :记住登录状态  %></div>
                             <% end -%>
 
-                            <div><%= f.submit "Sign in" %></div>
+                            <div><%= f.submit "登录" %></div>
                         </div>
 
                       <% end %> 
