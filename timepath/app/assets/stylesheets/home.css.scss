@@ -1,7 +1,7 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html,body,ul {
+html,body,ul,button {
     margin:0;
     padding:0;
 }
@@ -69,4 +69,43 @@ body {
     color:white;
     margin:0 auto;
 
+}
+.center-content {
+    width:400px;
+    height:100%;
+    margin:0 auto;
+}
+.board {
+   width:100%;
+   height:300px;
+}
+.login-button {
+    width:100%;
+    height:200px;
+    padding:10px;
+}
+.login-button .or {
+    height:30px;
+    width:60px;
+    margin:0 auto;
+    font-size:1.5em;
+    color:#555;
+    text-shadow:0 0 7px #fff;
+}
+.login-button button {
+    display:block;
+    background:linear-gradient(#8ADD6D, #60B044); 
+    width:280px;
+    margin:0 auto;
+    height:40px;
+    margin-top:30px;
+    border-radius:5px;
+    border:1px solid #EEE;
+    color:#fff;
+    font-size:1.3em;
+    cursor:pointer;
+}
+
+.login-board button:hover {
+    background:linear-gradient(#79D858,#569E3D);
 }

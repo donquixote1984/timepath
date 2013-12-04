@@ -1,4 +1,4 @@
-.register-board {
+.register-board,.login-board {
     vertical-align:middle;
     
     width:100%;
@@ -8,14 +8,15 @@
     box-shadow:0 0 20px #fff inset;
     margin-top:50px;
 }
-.register-board-shadow {
-   width:400px;
-   height:300px;
+.register-board-shadow, .login-board-shadow {
+   width:100%;
+   width:100%;
    box-shadow: 0 0 7px #aaa; 
    border-radius: 5px;
    margin:0 auto;
+   
 }
-.register-board-form {
+.register-board-form,.login-form {
     width:100%;
     height:100%;
 }

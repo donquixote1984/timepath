@@ -1,4 +1,7 @@
 
 $(function(){
-    console.log($(".blur-background"))
+	$("#login-button").click(function(){
+		console.log("login clicked")
+		
+	})
 })
