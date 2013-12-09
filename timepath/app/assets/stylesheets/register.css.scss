@@ -17,21 +17,49 @@
    left:0;
    top:50px;
    backface-visibility: hidden;
-
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility:hidden;
+   -ms-backface-visibility:hidden;
+   -webkit-transform: translate3d(0,0,0);
+   background: image-url('P4GfA.jpg') repeat;
 }
 
+.front-face {
+    z-index:1;
+}
 .turnover {
      transform: rotateY(180deg);
+     -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+     -ms-transform: rotateY(180deg);
+     -webkit-backface-visibility: hidden; /* again */
+}
+.board>div:first-child {
+    z-index:1
+}
+.turnover>div:first-child {
+    z-index:-1
 }
 .turnback {
     transform:rotateY(0deg);
+    -webkit-transform:rotateY(0deg);
+    -moz-transform:rotateY(0deg);
+    -ms-transform:rotateY(0deg);
+    -webkit-backface-visibility: hidden; /* again */
 }
 .login-board-shadow  {
+-webkit-transform: translate3d(0,0,0);
     transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -webkit-backface-visibility: hidden; /* again */
+
 }
 .register-board-form,.login-form {
     width:100%;
     height:100%;
+    -webkit-backface-visibility: hidden; /* again */
 }
 .new_user {
     width:100%;

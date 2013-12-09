@@ -33,7 +33,7 @@ function initControls(){
 function initHover(){
     var hover = $(".hover")
     if(hover.attr("init")=='false'){
-        hover.addClass("hover-show")
+       hover.addClass("hover-show")
     }
 }
 function fadeHover(){

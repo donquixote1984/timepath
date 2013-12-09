@@ -1,7 +1,8 @@
 class DeviseCreateUsers < ActiveRecord::Migration
-  def change
-    create_table(:users) do |t|
+  def up
+    create_table :users,:id=>false do |t|
       ## Database authenticatable
+      t.string :id, :null=>false, :primary_key => true
       t.string :email,              :null => false, :default => ""
       t.string :encrypted_password, :null => false, :default => ""
 
@@ -36,7 +37,12 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
     add_index :users, :email,                :unique => true
     add_index :users, :reset_password_token, :unique => true
+    execute "ALTER TABLE users ADD PRIMARY KEY (id);"
     # add_index :users, :confirmation_token,   :unique => true
     # add_index :users, :unlock_token,         :unique => true
+  end
+
+  def down
+    drop_table :users
   end
 end

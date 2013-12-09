@@ -5,24 +5,26 @@
 }
 .hover {
     position:absolute;
-    width:100%;
+    width:0px;
     height:100%;
     top:0;
     z-index:100000;
-    transition: 1s;
-    left:2000px;
-    opacity:0;
+    transition:all 500ms cubic-bezier(.67, .31, .43, .82); 
+    left:-1000px;
+    opacity:1;
 }
 .hover-show {
     left:0;
     opacity:1;
+    width:100%;
+    display:block;
 }
 .hover:after {
     position:absolute;
     width:100%;
     height:100%;
     background:image-url('ios-linen.jpg') repeat;
-    left:0;
+    right:0;
     top:0;
     opacity:0.6;
     content:"";
