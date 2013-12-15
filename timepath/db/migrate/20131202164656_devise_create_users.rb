@@ -32,6 +32,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
        t.datetime :locked_at
 
 
+       t.string :profile_id
       t.timestamps
     end
 

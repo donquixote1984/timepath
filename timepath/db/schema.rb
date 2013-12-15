@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131202164656) do
+ActiveRecord::Schema.define(version: 20131215102813) do
+
+  create_table "profiles", force: true do |t|
+    t.string   "name"
+    t.string   "icon"
+    t.text     "detail"
+    t.integer  "age"
+    t.text     "address"
+    t.string   "email"
+    t.string   "city"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -27,6 +39,7 @@ ActiveRecord::Schema.define(version: 20131202164656) do
     t.integer  "failed_attempts",        default: 0,  null: false
     t.string   "unlock_token"
     t.datetime "locked_at"
+    t.string   "profile_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
