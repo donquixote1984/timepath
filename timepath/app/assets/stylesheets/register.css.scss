@@ -68,6 +68,7 @@
 }
 .form-field {
     margin-top:10px;
+    height:100%;
 }
 .form-field input {
     margin:0 auto;
@@ -78,7 +79,16 @@
     font-size:1.2em;
     color:#555;
 }
-
+.form-field .form-field-icon {
+    float:left;
+    width:35%;
+    height:100%;
+}
+.form-field .form-field-text {
+    float:left;
+    width:65%;
+    height:100%;
+}
 .form-message{
     height:30px;
     display:none;
