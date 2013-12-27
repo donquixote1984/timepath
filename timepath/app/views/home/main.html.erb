@@ -38,7 +38,7 @@
     </div>
     <div class='hover' init='false'>
         <div class='profile-container-board'>
-            <div class='profile-board'>
+            <div class='profile-board profile-panel'>
                 <div class='profile-board-control'> <i class='glyphicons close'></i>
                 </div>
                 <h3>
@@ -72,17 +72,27 @@
                 </div>
             </div>
 
-            <div class='icon-board'>
+            <div class='icon-board profile-panel'>
                 <div class='profile-board-control'> <i class='glyphicons close'></i>
                 </div>
                 <h3>
                     完善个人信息
-                    <a href="javascript:void()" id='ttyl'>稍后在说</a>
+                    <a class='fileupload'>
+                        <span>点此上传</span>
+                        <input type="file" class="upload" />
+                    </a>
                 </h3>
                 <div class='form-field'>
-                    <div id='image-preview'>
+                    <div class='inline-div-group'>
+                         <div id='image-preview'></div>
 
+                        <div>
+                            <button class='profile-submit' id="profile-icon-button" onclick='showPreviousBoard()'>上一步</button>
+                            <span style='margin:0 5px;'>或者</span>
+                            <button class='profile-submit' id='profile-finish-button'>完成</button>
+                        </div>                       
                     </div>
+
                 </div>
             </div>
         </div>
@@ -91,6 +101,11 @@
     <script type='text/javascript'>
     function showIconUploadBoard(){
         $(".profile-board").addClass("turnover")
+
+    }
+
+    function showPreviousBoard(){
+        $(".profile-board").removeClass("turnover")
     }
 </script>
     <%= javascript_include_tag "main", "data-turbolinks-track" =>
